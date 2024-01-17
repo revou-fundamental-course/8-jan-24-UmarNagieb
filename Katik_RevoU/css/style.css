@@ -1,0 +1,72 @@
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.container-luas {
+    border: 1px solid rgba(101, 189, 243, 0.973);
+    padding: 15px;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(101, 189, 243, 0.973);
+    padding: 10px;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    background-color: rgb(51, 172, 247, 0.973);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+#big-text {
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+
+#small-text {
+    font-size: 1em;
+    color: grey;
+    font-family: sans-serif;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(51, 172, 247, 0.973);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.reset {
+    background-color: red;
+}
+
+input {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#results {
+    margin-top: 20px;
+}

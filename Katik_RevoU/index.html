@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<title>Hitung Luas & Keliling</title>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>
+        <span id="big-text">Katik</span>
+        <span id="small-text"> Kalkulator Matematik</span>
+    </h1>
+    <div class="container">
+        <h2>Welcome To Katik</h2>
+        <h3>Hai Sobat, Selamat datang di Katik :)</h3>
+        <h3>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</h3>
+        <h4>Persegi</h4>
+
+        <div class="container-luas">
+            <h1 style="background-color: rgba(51, 172, 247, 0.973);">
+                <span id="big-text">Luas Persegi</span>
+            </h1>
+
+            <img src="img/persegi.png" alt="Persegi Image" style="display: block; margin: auto;">
+            <br></br>
+
+            <!-- Form Luas -->
+            <form id="luas-form">
+                <p>Rumus Luas Persegi yaitu:</p>
+                <p style="text-align: center; font-weight: bold;">
+                    L = S x S
+                </p>
+                <p>Keterangan:</p>
+                <p>L = Luas</p>
+                <p>S = Sisi</p>
+
+                <h2 style="text-align: center; font-weight: bold; font-size: 40px; margin-bottom: 10px;">
+                    Hitung Luas Persegi
+                </h2>
+                <div style="text-align: center; margin-bottom: 15px;">
+                    <input type="number" id="luas-sideLength" name="luas-sideLength"
+                        style="width: 80%; margin: 0 auto; display: block; margin-bottom: 10px;"
+                        placeholder="Nilai Sisi">
+                    <button type="button" onclick="calculateLuas()">Hitung</button>
+                    <button type="button" onclick="resetForm()" class="reset">Reset</button>
+                </div>
+                <div id="luas-result"></div>
+            </form>
+        </div>
+        <p></p>
+
+        <div class="container-luas">
+            <h1 style="background-color: rgba(51, 172, 247, 0.973);">
+                <span id="big-text">Keliling Persegi</span>
+            </h1>
+
+            <img src="img/persegi.png" alt="Persegi Image" style="display: block; margin: auto;">
+            <br></br>
+
+            <!-- Form Keliling -->
+            <form id="keliling-form">
+                <p>Rumus Keliling Persegi yaitu:</p>
+                <p style="text-align: center; font-weight: bold;">
+                    K = 4 x S
+                </p>
+                <p>Keterangan:</p>
+                <p>K = Keliling</p>
+                <p>S = Sisi</p>
+
+                <h2 style="text-align: center; font-weight: bold; font-size: 40px; margin-bottom: 10px;">
+                    Hitung Keliling Persegi
+                </h2>
+                <div style="text-align: center; margin-bottom: 15px;">
+                    <input type="number" id="keliling-sideLength" name="keliling-sideLength"
+                        style="width: 80%; margin: 0 auto; display: block; margin-bottom: 10px;"
+                        placeholder="Nilai Sisi">
+                    <button type="button" onclick="calculateKeliling()">Hitung</button>
+                    <button type="button" onclick="resetForm()" class="reset">Reset</button>
+                </div>
+                <div id="keliling-result"></div>
+            </form>
+
+            <div id="results">
+                <p id="area-result"></p>
+                <p id="perimeter-result"></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/Script.js"></script>
+</body>
+
+</html>
